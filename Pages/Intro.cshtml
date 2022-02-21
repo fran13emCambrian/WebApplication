@@ -1,0 +1,38 @@
+﻿@page
+@model IntroModel
+@{
+    ViewData["Title"] = "New Section";
+}
+
+
+<body>
+    <div>
+        <h3>Francisco Escobar</h3><br />
+    </div>
+    <div>
+        <form method="post" asp-page="Intro">
+
+            <label asp-for="Number1">Insert Number 1: </label>
+            <input asp-for="Number1" class="form-control" /> <br />
+            <br />
+            <label asp-for="Number2">Insert Number 2: </label>
+            <input asp-for="Number2" class="form-control" /> <br />
+ 
+            <input type="submit" value="Submit Numbers" class="btn btn-primary" /> <br /><br /> 
+
+        </form>
+    </div>
+
+    <div>
+
+        <h5> First Number Is: @Model.Number1 </h5><br />
+        <h5> Second Number Is: @Model.Number2 </h5> <br /><br />
+    </div>
+
+    <div>
+        <h4>Paragraph Here!!</h4><br />
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend sem vel augue dictum, mattis iaculis ex porttitor. Nunc risus massa, imperdiet in commodo non, viverra at felis. Etiam mattis tincidunt dui, eu sollicitudin neque placerat non. Etiam pharetra metus ut ligula imperdiet porttitor. Etiam ante sem, lacinia sed ipsum at, malesuada blandit neque. Nulla pharetra maximus leo vehicula fringilla. Fusce aliquam ante non bibendum tempor. Aliquam ullamcorper, odio in aliquet consequat, nunc justo varius dui, tincidunt condimentum risus orci in mauris. Vestibulum leo arcu, luctus eget velit vitae, vestibulum porta quam. Quisque quis vulputate magna. Donec et convallis nibh. Curabitur mi turpis, pellentesque eu neque sit amet, auctor congue dolor. Proin suscipit rhoncus purus, vitae venenatis metus mollis quis. Nullam at nisl ut sem scelerisque vulputate id ac erat. Vivamus non est et massa scelerisque suscipit et sagittis neque.
+        </p><br /><br />
+    </div>
+</body>
